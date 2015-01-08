@@ -11,7 +11,9 @@ Since the [toString() method](https://android.googlesource.com/platform/framewor
 This can be seen in this example by watching the logs and performing the following steps:
 
 1. Launch the app
-2. Observe that the first two fragments are created, and their indecies are correct in both onCreate and onActivityCreated.
-3. Press the tab labeled "PAGE 2"
-4. Observe that the index is not present in onCreate, but is present on onActivityCreated.
+2. Observe that the first two fragments are created
+4. Observe that for PAGE 0, the index is not present in onCreate, but is present in onActivityCreated.
+5. Observe that for PAGE 1, which is added, but not immediately the current item, the index is present in both onCreate and onActivityCreated.
+6. Press the tab labeled "PAGE 2"
+7. Observe that the index is not present in onCreate, but is present on onActivityCreated.
 
